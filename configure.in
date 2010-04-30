@@ -1,0 +1,41 @@
+GETTEXT_PACKAGE=gnome_breakout
+
+AC_INIT(gnome-breakout, 0.5.3)
+AC_CONFIG_SRCDIR(src/gnome-breakout.c)
+AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+
+PKG_CHECK_MODULES(GNOMEUI, libgnomeui-2.0)
+AC_SUBST(GNOMEUI_CFLAGS)
+AC_SUBST(GNOMEUI_LIBS)
+
+#AM_CONFIG_HEADER(config.c)
+AM_MAINTAINER_MODE
+#AM_ACLOCAL_INCLUDE(macros)
+#GNOME_INIT
+
+AC_PROG_CC
+AC_ISC_POSIX
+AC_HEADER_STDC
+
+GNOME_COMPILE_WARNINGS(maximum)
+
+ALL_LINGUAS="ru tr de sv"
+AM_GLIB_GNU_GETTEXT
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE")
+
+AC_SUBST(CFLAGS)
+AC_SUBST(CPPFLAGS)
+AC_SUBST(LDFLAGS)
+
+#localstatedir=`gnome-config --localstatedir`
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+po/Makefile.in
+pixmaps/Makefile
+levels/Makefile
+gnome-breakout.spec
+])
+

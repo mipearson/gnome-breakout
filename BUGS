@@ -1,0 +1,27 @@
+feature, n:
+        A surprising property of a program.  Occasionaly documented.  To
+        call a property a feature sometimes means the author did not
+        consider that case, and the program makes an unexpected, though
+        not necessarily wrong response.  See BUG.  "That's not a bug, it's
+        a feature!"  A bug can be changed to a feature by documenting it.
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- The ball gets enters infinite bouncing loops if it gets stuck between a
+series of invincible blocks. Again, a design bug, which I've currently worked
+around by randomizing the direction of the ball after 20 seconds of airtime
+and by adding the "Kill Ball" menu item.
+
+- Entropy will amplify collision detection bugs. I think it's horrible,
+regardless, but somebody wanted it implimented.
+
+- Entropy sucks. It's supposed to.
+
+- When keyboard control is enabled, and the app has keyboard focus, and the
+pointer is outside the window, the application doesn't register keyup events.
+This gets annoying very quickly, but I can't seem to work out how to fix it.
+
+- There may be issues with the automatic pause logic.
+
+- Probably uses deprecated GNOME/GTK functions. Most of the development on
+GNOME Breakout was done in the first quarter of 2000, and the API has probably
+changed since then.

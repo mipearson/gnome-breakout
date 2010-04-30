@@ -1,0 +1,11 @@
+src/anim.c
+src/ball.c
+src/collision.c
+src/game.c
+src/gnome-breakout.c
+src/gui.c
+src/gui-callbacks.c
+src/gui-preferences.c
+src/block.c
+src/powerup.c
+src/flags.c

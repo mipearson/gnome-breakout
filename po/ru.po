@@ -1,0 +1,300 @@
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Valek Filippov <frob@df.ru>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gnome-Breakout\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-19 21:55+1000\n"
+"PO-Revision-Date: 2000-04-04 21:25+04:00\n"
+"Last-Translator: Valek Filippov <frob@df.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: src/gui.c:33 src/gui-callbacks.c:86
+msgid "GNOME Breakout"
+msgstr "GNOME Breakout"
+
+#: src/gui.c:130
+msgid "Score: 0"
+msgstr "Очки: 0"
+
+#: src/gui.c:132
+msgid "Lives: 0"
+msgstr "Жизни: 0"
+
+#: src/gui.c:186
+#, fuzzy, c-format
+msgid "No: %d"
+msgstr "Очки: %d"
+
+#: src/gui.c:191
+#, c-format
+msgid "Name: %s"
+msgstr ""
+
+#: src/gui.c:192
+#, c-format
+msgid "Author: %s"
+msgstr ""
+
+#: src/gui.c:193
+#, fuzzy, c-format
+msgid "Levelfile: %s"
+msgstr "Жизни: %d"
+
+#: src/gui.c:195 src/gui.c:404
+#, fuzzy
+msgid "Name:"
+msgstr "Игра"
+
+#: src/gui.c:196 src/gui.c:405
+msgid "Author:"
+msgstr ""
+
+#: src/gui.c:197
+#, fuzzy
+msgid "Filename:"
+msgstr "Огонь 1:"
+
+#: src/gui.c:211
+#, c-format
+msgid "Score: %d"
+msgstr "Очки: %d"
+
+#: src/gui.c:218
+#, c-format
+msgid "Lives: %d"
+msgstr "Жизни: %d"
+
+#. FIXME: Remove this when appropriate
+#: src/gui.c:236
+msgid "_Kill ball"
+msgstr "Убить шар"
+
+#: src/gui.c:237
+msgid "Kill the current ball if it gets stuck"
+msgstr "Убить текущий шар если он gets stuck"
+
+#: src/gui.c:311
+msgid "GNOME Breakout: You win!"
+msgstr "GNOME Breakout: Вы выиграли!"
+
+#: src/gui.c:314
+msgid "GNOME Breakout: You lose!"
+msgstr "GNOME Breakout: Вы проиграли!"
+
+#: src/gui.c:403
+msgid "No:"
+msgstr ""
+
+#: src/gui.c:406
+#, fuzzy
+msgid "Levelfile:"
+msgstr "Жизни: 0"
+
+#: src/gui-callbacks.c:69
+msgid "The classic arcade game Breakout."
+msgstr ""
+
+#: src/gui-callbacks.c:72
+msgid "translator credits"
+msgstr ""
+
+#. name
+#. version
+#: src/gui-callbacks.c:88
+#, fuzzy
+msgid "Copyright (c) 2000-2003 Michael Pearson"
+msgstr "Авторское право (с) 2000 Michael Pearson"
+
+#. FIXME!!
+#: src/gui-callbacks.c:206
+msgid "Help hasn't been implimented yet. So go ahead and write some for me :)"
+msgstr ""
+"Справка еще не реализована. Поэтому выходите и напишите что-нибудь для "
+"меня :-)"
+
+#: src/gui-callbacks.c:257
+msgid "GNOME Breakout: Scores"
+msgstr "GNOME Breakout: Очки"
+
+#: src/gui-preferences.c:148
+msgid "GNOME Breakout Preferences"
+msgstr "Настройки GNOME Breakout"
+
+#. Vbox and Tablabel - Constructor
+#: src/gui-preferences.c:201
+msgid "Game"
+msgstr "Игра"
+
+#: src/gui-preferences.c:218
+#, fuzzy
+msgid "Levels"
+msgstr "Жизни: 0"
+
+#: src/gui-preferences.c:226
+msgid "Add"
+msgstr ""
+
+#: src/gui-preferences.c:227
+msgid "Remove"
+msgstr ""
+
+#: src/gui-preferences.c:292
+msgid "Difficulty"
+msgstr "Сложность"
+
+#: src/gui-preferences.c:294
+msgid "Difficulty (next game)"
+msgstr "Сложность (следующая игра)"
+
+#: src/gui-preferences.c:298
+msgid "Easy"
+msgstr "Просто"
+
+#: src/gui-preferences.c:300
+msgid "Medium"
+msgstr "Средне"
+
+#: src/gui-preferences.c:302
+msgid "Hard"
+msgstr "Сложно"
+
+#. Automatic Pause Frame - Constructor
+#: src/gui-preferences.c:346
+msgid "Automatic Pause"
+msgstr ""
+
+#: src/gui-preferences.c:348
+msgid "When we lose keyboard focus"
+msgstr ""
+
+#: src/gui-preferences.c:349
+msgid "When the mouse pointer leaves the play window"
+msgstr ""
+
+#: src/gui-preferences.c:350
+msgid "When the preferences dialog is active"
+msgstr ""
+
+#: src/gui-preferences.c:378
+msgid "Hide the pointer"
+msgstr ""
+
+#. Bounce Entropy - Constructor
+#: src/gui-preferences.c:390
+msgid "Bounce Entropy (Experimental): "
+msgstr ""
+
+#: src/gui-preferences.c:467
+msgid "Control"
+msgstr "Управление"
+
+#. Method Frame and Radio Buttons
+#: src/gui-preferences.c:475
+msgid "Method"
+msgstr ""
+
+#: src/gui-preferences.c:479
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: src/gui-preferences.c:481
+msgid "Mouse"
+msgstr "Мышь"
+
+#. Bat speed
+#: src/gui-preferences.c:501
+msgid "Bat speed: "
+msgstr "Скорость ракетки: "
+
+#. Keybindings Frame
+#: src/gui-preferences.c:521
+msgid "Keybindings"
+msgstr "Назначение клавиш"
+
+#: src/gui-preferences.c:531
+msgid "Left:"
+msgstr "Влево:"
+
+#: src/gui-preferences.c:548
+msgid "Right:"
+msgstr "Вправо:"
+
+#: src/gui-preferences.c:565
+msgid "Fire One:"
+msgstr "Огонь 1:"
+
+#: src/gui-preferences.c:582
+msgid "Fire Two:"
+msgstr "Огонь 2:"
+
+#: src/flags.c:123
+msgid "Difficulty in config files is an incorrect value, resetting to defaults"
+msgstr ""
+"\"Сложность\" в конфигурационном файле - некорректная величина, установлена "
+"в исходную"
+
+#: src/flags.c:153
+msgid ""
+"Both keyboard control and mouse control are TRUE in user preferences, "
+"resetting to defaults"
+msgstr ""
+"В настройках были выбраны для управления и клавиатура и мышь, изменено на "
+"исходное значение."
+
+#: src/flags.c:158
+msgid ""
+"Neither keyboard control or mouse control are TRUE in user preferences, "
+"resetting to defaults"
+msgstr ""
+"В настройках не были выбраны для управления ни клавиатура ни мышь, изменено "
+"на исходное значение."
+
+#: src/flags.c:178
+msgid "Bat speed is lower than allowed range, setting to lowest"
+msgstr "Скорость ракетки\" меньше чем допустимая, установлена в наименьшую"
+
+#: src/flags.c:182
+msgid "Bat speed is higher than allowed range, setting to highest"
+msgstr "Скорость ракетки больше чем допустимая, установлена в наибольшую"
+
+#: src/flags.c:188
+#, fuzzy
+msgid "Bounce entropy is lower than allowed range, setting to lowest"
+msgstr "Скорость ракетки\" меньше чем допустимая, установлена в наименьшую"
+
+#: src/flags.c:192
+#, fuzzy
+msgid "Bounce entropy is higher than allowed range, setting to highest"
+msgstr "Скорость ракетки больше чем допустимая, установлена в наибольшую"
+
+#, fuzzy
+#~ msgid ""
+#~ "The classic arcade game Breakout. Written for my cat, Marmalade. (Hi, "
+#~ "Jason! Hi, Matt! Hi, JV! Hi, Joe! Hi, Tom! Hi, Richard!)\n"
+#~ " \n"
+#~ "This, if you haven't guessed yet, is a development release. Send "
+#~ "bugreports and comments to alcaron@senet.com.au, but check to see if they "
+#~ "haven't already been listed in TODO or BUGS.\n"
+#~ " \n"
+#~ "Also, I've noticed a couple of segfaults that seem to happen randomly, "
+#~ "and I'm having trouble reproducing them. So run this under gdb, and if it "
+#~ "dies, send me the backtrace."
+#~ msgstr ""
+#~ "Классическая аркадная игра \"Breakout\". Написана для моего кота - "
+#~ "Мармелада.\n"
+#~ "\n"
+#~ "Это, если вы еще не догадались, тестовый выпуск. Отправляйте сообщения об "
+#~ "ошибках и комментарии по адресу alcaron@senet.com.au, но проверяйте не "
+#~ "указаны ли они уже в файлах TODO и BUGS.\n"
+#~ "\n"
+#~ "Также я заметил кучу segfault, которые кажутся случайно возникающими и "
+#~ "мне сложно воспроизвести их. Поэтому запускайте эту программу под gdb и "
+#~ "если она умрет,пришлите мне backtrace."
+
+#~ msgid "Pause on loss of focus"
+#~ msgstr "Пауза при утрате фокуса ввода"

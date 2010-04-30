@@ -1,0 +1,63 @@
+2004-05-19 GNOME Breakout v0.5.3:
+Changed all deprecated GNOME 1 and GTK 1 functionality to GNOME 2 and GTK 2
+calls.
+
+2001-04-07 GNOME Breakout v0.5.2:
+Fixed a nasty next level bug, changed the block pixmaps.
+
+2001-02-12 GNOME Breakout v0.5.1:
+Fixed a couple more focus issues, added a couple of usability patches, 
+repaired minor scores permissions, rewrote the pause code.
+
+2001-02-06 GNOME Breakout v0.5:
+Bounce entropy, improvements to pause/focus code, new powerups, new block
+types, and customisable levelfiles. 
+
+2000-04-19 GNOME Breakout v0.4:
+I've finally implimented some "real" powerups, which are really cool. And
+there's a new title graphic. And some bugs have been fixed. And there's some
+new levels. And some other stuff.
+
+2000-04-08 GNOME Breakout v0.3.1:
+Veny meeny buggerfixen, ja.
+
+2000-04-04 GNOME Breakout v0.3:
+New features:
+- End game dialog, with scoreboard
+- "Sticky" bat
+- Stronger blocks
+- A couple of new levels
+- Minor UI improvements
+
+2000-04-03 GNOME Breakout v0.2.2:
+Another bugfix. On the same day, too :)
+
+- Difficulty level now only changes when you start a new game
+- UI usability tweaks
+- Explicit pausing
+
+2000-04-03 GNOME Breakout v0.2.1:
+Bugfix release. Fixes the following:
+
+- Stuck-in-wall bug, and some of the stuck-in-block bugs
+- Loss of focus is now detected by whether the mouse pointer is inside the
+  canvas or not.
+
+2000-03-25 GNOME Breakout v0.2:
+Second public development release.
+
+The following bugs have been fixed:
+- Various random segfaults
+- Infinite horizontal ball looping
+
+And these BRILLIANT NEW FEATURES (cough) have been implimented:
+- A preferences dialog
+- Mouse control
+- A new level
+- Difficulty support
+- Redefineable keys
+- Pause on focus loss
+- A .spec file for all you rpm heads out there (courtesy Jens Finke)
+
+2000-03-21 GNOME Breakout v0.1:
+Initial public development release. Be very, very afraid.

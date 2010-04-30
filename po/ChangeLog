@@ -1,0 +1,35 @@
+2001-11-17  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.40.
+
+2001-11-17  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.40.
+
+2001-11-17  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.40.
+
+2001-05-19  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.36.
+
+2001-05-19  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.36.
+	* cat-id-tbl.c: Remove file.
+	* stamp-cat-id: Remove file.
+
+2000-04-24  Michael Pearson  <alcaron@senet.com.au>
+
+        * Patched the turkish translation
+
+	* Added German translation, courtesy of Matthias Haller <matzi@ngi.de>
+
+2000-04-04  Fatih Demir	<kabalak@gmx.net>
+  
+ 	* tr.po : Added the Turkish translation for release 0.3 .
+
+2000-04-23 Matthias Haller <matzi@ngi.de>
+
+	* de.po : Added the German translation for release 0.4 .

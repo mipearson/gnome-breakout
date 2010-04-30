@@ -1,0 +1,41 @@
+%define name          @PACKAGE@
+%define version       @VERSION@
+%define prefix        @prefix@
+%define localstatedir @localstatedir@
+
+Summary		: A bust-the-blocks game for GNOME
+Name		: %{name}
+Version		: %{version}
+Prefix 		: %{prefix}
+Release		: 1
+Copyright	: GPL
+Group		: X11/Games
+Source		: http://www.senet.com.au/~alcaron/%{name}-%{version}.tar.gz
+Buildroot	: %{_tmppath}/%{name}-%{version}-root
+
+%description
+A breakout clone for GNOME.
+
+%prep
+%setup
+
+%build
+CFLAGS="${RPM_OPT_FLAGS}" ./configure --prefix="%{prefix}"
+make
+
+%install
+rm -rf "${RPM_BUILD_ROOT}"
+make install DESTDIR="${RPM_BUILD_ROOT}"
+
+%clean
+rm -rf "${RPM_BUILD_ROOT}"
+
+
+%files
+%defattr(-, root, root)
+%doc AUTHORS COPYING ChangeLog INSTALL NEWS README TODO
+%attr(2111, root, games) %{prefix}/bin/gnome-breakout
+%{prefix}/share/gnome-breakout/pixmaps
+%{prefix}/share/gnome-breakout/levels
+%{prefix}/share/gnome/apps/Games/gnome-breakout.desktop
+%attr(0644, games, games) %{localstatedir}/games/gnome-breakout.scores

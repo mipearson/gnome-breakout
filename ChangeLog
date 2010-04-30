@@ -1,0 +1,82 @@
+2004-05-19  Michael Pearson  <mipearson@internode.on.net>
+
+	* 0.5.3 release
+
+2001-05-19  Michael Pearson  <alcaron@senet.com.au>
+
+	* Added Swedish translation, courtesy of Bo Rosen. <bo.rosen@home.se>
+
+2001-04-07  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.5.2 release
+
+	* Changed the pixmaps to make them pwettier
+
+2001-01-29  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.5 release
+
+2000-04-29  Michael Pearson  <alcaron@senet.com.au>
+
+	* Replaced the icon with Kai Lahmann's, because it scales better.
+
+2000-04-24  Michael Pearson  <alcaron@senet.com.au>
+
+	* Spec file now sets permissions, installs po files, and unsets
+	the LINGUAS env variable. Courtesy Matthias Haller <matzi@ngi.de>
+
+2000-04-19  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.4 release
+
+2000-04-08  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.3.1 release
+
+2000-04-07  Michael Pearson  <alcaron@senet.com.au>
+
+	* Replaced my title.png with N0mada's title.
+
+2000-04-06  Michael Pearson  <alcaron@senet.com.au>
+
+	* INSTALL : Added a note pertaining to the /var/lib Debian thing
+
+2000-04-04  Fatih Demir	<kabalak@gmx.net>
+
+	* gnome-breakout.desktop : Added the Turkish
+	    translation .
+	
+2000-04-04  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.3 release
+
+2000-04-03  Michael Pearson  <alcaron@senet.com.au>
+
+	* 0.2.1 bugfix release
+
+	* 0.2.2 bugfix release
+	
+	* Added more pixmaps to pixmap/ for the stronger blocks
+
+2000-03-31  Michael Pearson  <alcaron@senet.com.au>
+
+	* Added the russian translation, thanks to Valek Filippov <frob@df.ru>
+
+2000-03-28  Michael Pearson  <alcaron@senet.com.au>
+
+	* Made Makefile.am install scores, and setgid games gnome-breakout
+
+2000-03-25  Michael Pearson  <alcaron@senet.com.au>
+
+	* Added BUGS as a seperate file from TODO
+
+	* 0.2 release
+
+2000-03-22  Michael Pearson  <alcaron@senet.com.au>
+
+	* Applied the .spec patch, thanks to Jens Finke <pearl@darkride.net>
+
+2000-03-21  Michael Pearson  <alcaron@senet.com.au>
+
+	* Initial release
+

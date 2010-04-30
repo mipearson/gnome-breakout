@@ -1,0 +1,13 @@
+Things which need to be completed before I'll call this 1.0:
+- Sound
+- More animated graphics
+- Debian package
+- Full documentation
+- Lose and win eyecandy
+- Add exploding blocks to existing levels
+- Improve collision detection
+- Move drawing code to something other than GNOME Canvas (gdk pixbuf?)
+
+Ideas for post 1.0:
+- Seperate tilesets
+- Save/load games

@@ -1,0 +1,225 @@
+2004-05-19   Michael Pearson  <mipearson@internode.on.net>
+
+	* Changed all deprecated GNOME 1 and GTK 1 references to GNOME 2
+	  and GTK 2 references
+
+2003-03-15   Michael Pearson  <mipearson@internode.on.net>
+	
+	* Changed collision.c constant names from A,B,C,etc to AX1, AX2, etc
+
+
+2001-12-10   Michael Pearson  <alcaron@senet.com.au>
+
+	* Reworked event code. Again.
+
+2001-11-01   Michael Pearson  <alcaron@senet.com.au>
+        
+        * Moved PauseType and EndGameStatus to breakout.h from game.h
+
+	* Added event code
+
+	* Removed unnecessary update_gnome calls
+
+2001-03-05  Michael Pearson  <alcaron@senet.com.au>
+
+	* Rewrote a couple of nasty literal constants in the framerate code
+	  of game.c
+	
+	* Implemented a temporary workaround to stop the game segfaulting
+	  when a nextlevel powerup is retreived.
+
+2001-02-12  Michael Pearson  <alcaron@senet.com.au>
+
+	* Added Detlef Reichl's window raising patch.
+
+	* Rewrote pause code
+
+	* Removed pointer grabbing
+
+2001-01-29  Michael Pearson  <alcaron@senet.com.au>
+	
+	* Various focus and pausing fixes
+
+	* Custom levelfiles
+
+	* Changed all references of "ozemail" to "senet"
+
+2000-09-27  Michael Pearson  <alcaron@senet.com.au>
+
+	* Bounce entropy added
+
+	* Changed layout of preferences dialog
+
+	* New block type: explode
+
+2000-04-25  Michael Pearson  <alcaron@senet.com.au>
+
+	* Made pointer grabbing optional
+
+	* Changed the names in leveldat.h to reflect the authors
+
+	* Added new levels
+
+	* levels[] is now capped by a NULL, rather than a #define
+
+	* fire[12]_pressed are nullified by iterate_ball_stuck(), to stop
+	multiple balls being launched at the same time.
+
+2000-04-24  Michael Pearson  <alcaron@senet.com.au>
+
+	* gnome-breakout can now grab the mouse pointer, courtesy of
+	Matthias Haller <matzi@ngi.de>
+
+2000-04-19  Michael Pearson  <alcaron@senet.com.au>
+
+	* powerup.c: Implimented various levels of powerup "importance", and
+	thus more "important" powerups appear less often.
+
+	* breakout.h, ball.c: Moved the old_[xy]1 stuff out of the Ball
+	structure and into iterate_ball_default, where it should be.
+
+	* block.c: Hitting an invincible block no longer renders a score. I
+	don't want a scoreboard "polluted" because of an unrelated bug.
+
+2000-04-18  Michael Pearson  <alcaron@senet.com.au>
+
+	* gui.c, gui-callbacks.c: Changed ENDGAME_MENU to not display a scores
+	window, because it's annoying.
+
+	* powerup.c: Implimented extra life, double ball, next level, slow
+	and wide bat powerups
+
+	* anim.c: Fixed a stupid bug in init_animations which was causing
+	init_animations to not be malloc'd correctly. This may also correct
+	some of the segfaults that people have been having.
+
+	* leveldata.h: Added Marisa Mack's levels.
+
+2000-04-17  Michael Pearson  <alcaron@senet.com.au>
+
+	* ball.c, collision.c: Changed interate_ball_default to not try and
+	perform any actions on a ball that doesn't exist. This -may- erase the
+	segfault-on-ball death problem, but I'm not sure.
+
+2000-04-08  Michael Pearson  <alcaron@senet.com.au>
+
+	* ball.c: Found that the ball-through-bat bug was caused by the ball
+	registering a collision with the wall, and thus not checking for a
+	collision with the bat. Fixed.
+
+	* ball.c: Moved the checks for the stuck-in-block bug to AFTER the
+	collision detection. This -should- work. Maybe.
+
+	* game.c: Implimented Detlef Reichl's gettimeofday() patch to replace
+	clock() for framerate calculation. clock() counts according to how
+	much processor time the program has used, not how much actual time
+	has passed, which is unnaceptable for framerate calculation.
+
+2000-04-06  Michael Pearson  <alcaron@senet.com.au>
+
+	* Fixed small i18n issue in gui.c and gui-callbacks.c. Thanks, Valek.
+
+	* gui-callbacks.c: Changed cb-focus-in to not check for pause_on_
+	focus_loss flag when unpausing.
+
+	* gui.c, gui.h: Implimented a level label, thanks to Detlef Reichl.
+
+2000-04-05  Michael Pearson  <alcaron@senet.com.au>
+
+	* anim.c animloc.h: Changed init_animations() to use a NULL terminated
+	array rather than cap it with NUM_ANIMS
+
+	* game.c bat.[ch]: Moved the bat functions to a seperate file
+
+	* bat.c powerup.c: Implimented the "laser" powerup
+
+	* powerup.c: Lowered the powerup chance
+
+	* block.c: Powerups can now be spawned from hitting strong blocks 
+
+	* collision.c: ball_bat_collision(): now "caps" the redirection angle,
+	to avoid horizontal bat hits.
+
+2000-04-04  Michael Pearson  <alcaron@senet.com.au>
+
+	* leveldata.h: Added an #e level out of boredom
+
+	* gui.c, gui-callbacks.c, game.c: Changed gui_end_game to display a
+	scoreboard.
+
+	* breakout.h, block.c, ball.c: Made Ball remember where it was last,
+	and also destroy a block if it gets stuck inside one.
+
+2000-04-03  Michael Pearson  <alcaron@senet.com.au>
+
+	* block.c, collision.c: Standardised Block functions to take a Block *
+	instead of a block_no
+
+	* flags.c, gui-preferences.c, game.c: Difficulty level now only changes
+	on the next game started
+
+	* game.c: Implimented explicit (menu) pause.
+
+	* game.c, breakout.h: Expanded bat_move to mouse_move and keyboard_move.
+
+	* ball.c, game.c: New ball type: BALL_STUCK
+
+	* block.c, anim.c: Implimented stronger blocks
+
+2000-03-28  Michael Pearson  <alcaron@senet.com.au>
+
+	* block.c: Fixed a silly bug in find_block_from_position() which
+	caused the wrong block to be returned.
+
+	* block.c: Fixed ANOTHER silly bug which caused the block at 0,0 to
+	not be destroyed.
+
+2000-03-27  Michael Pearson  <alcaron@senet.com.au>
+
+	* game.c, block.[ch], collision.c, breakout.h: Implimented a
+	block-array rather than a linked list. Also implimented better
+	hit-side-detection, based on what blocks are next to the hit block.
+
+2000-03-25  Michael Pearson  <alcaron@senet.com.au>
+
+	* gui.c, gui-callbacks.c: Standardised the callbacks to take GuiInfo *
+	as their data element, rather than Game *.
+
+	* collision.c: Messed with ball_wall_collision some more in the
+	never-ending effort to stop the stuck-in-wall bug. 
+
+	* collision.c: Added checks to ball_bat_collision to stop the ball
+	from slipping off of the edge of the bat. Not sure if they work.
+
+2000-03-25  Michael Pearson  <alcaron@senet.com.au>
+	
+	* game.c: Chagned iterate_game to not perform iteration functions when
+	the next_level is triggered. Should stop the end-of-game segfault.
+
+	* block.c: Ignores BLOCK_DEAD in next_level_check
+
+	* gui-callbacks.c, gui.c: Implimented pause_on_focus_loss
+
+	* game.c, gui-callbacks.c, gui.c: Implimented mouse control
+
+2000-03-24  Michael Pearson  <alcaron@senet.com.au>
+
+	* Removed and messed with the checks in ball_wall_collision.
+
+2000-03-23  Michael Pearson  <alcaron@senet.com.au>
+
+	* ball.c, breakout.h: Added support for pseudo position in the ball.
+	This will allow for finer direction control, and eliminate the
+	horizontal-ball bug.
+
+	* ball.c, breakout.h: Added an "airtime" variable in Ball.
+	iterate_balls will increment this, and randomise the direction if it
+	gets too high.
+
+	* *.[ch]: Implimented preferences support. Too many changes to list
+	here :)
+
+	* collision.c: Inserted checks in ball_wall_collision to stop the ball
+	from getting 'stuck' inside the wall.
+
+	* flags.c: Added some control sanity checks

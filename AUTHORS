@@ -1,0 +1,32 @@
+Michael Pearson <alcaron@senet.com.au>
+	* Most things not listed below.
+
+Jens Finke <pearl@darkride.net>
+	* The RPM .spec file.
+
+Detlef Reichl <detlef.reichl@arcormail.de>
+	* Bugtesting, suggestions, and misc patches
+
+Valek Filippov <frob@df.ru>
+	* Russian translation
+
+Fatih Demir <kabalak@gmx.net>
+	* Turkish translation
+
+N0mada <n0mada@wanadoo.es>
+	* Title graphic
+	* Bat pictures
+
+Marisa Mack <marisa@teleport.com>
+	* mmack levels
+
+Matthias Haller <matzi@ngi.de>
+	* gnome-breakout.spec corrections
+	* German translation
+	* Proper mouse behaviour and pointer grabbing
+
+Mathieu Dutour <dutour@clipper.ens.fr>
+	* mdutour levels
+
+Kai Lahmann <kailahmann@01019freenet.de>
+	* Icon

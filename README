@@ -1,0 +1,50 @@
+This is a development release of a GNOME clone of the classic arcade game,
+Breakout. Some common questions:
+
+Q: Just what is Breakout, anyway?
+A: Play the game, and find out.
+
+Q: It's been quite a while since the last release. What's up?
+A: I'm now employed. Instead of coding for the fame, glory, and sex appeal
+   that isn't generally associated with the Open Source coder, I'm doing it
+   for money. Which can buy all three.
+
+Q: Is this release playable?
+A: Yes. Unlike some programmers, I don't like making a million so called
+   "development releases" which contain nothing more than a couple of header
+   files. This is a development release which, hopefully, people will actually
+   want to develop.
+
+Q: Doesn't GNOME have enough games?
+A: You can never have enough games.
+
+Q: Are you going to ever write anything useful in C? First ripple, now this.
+A: I have, but I doubt that my previous employer would like it if I gave the
+   world the source. Which is a pity, because they were really useful bits of
+   code.
+
+Q: I'd like to write some more levels for GNOME Breakout. How can I do this?
+A: Take a look at the .gbl files in the levels directory. At the moment
+   there's no documentation for creating levels, but it's pretty 
+   straightforward.
+
+Q: I've played both Arkanoid and Breakout to death, and this doesn't have half
+   the features of either. Whats up?
+A: I haven't gotten around to them yet. If you'd like to see a certain feature,
+   either write it yourself or mail me with your idea. If I like it, I'll
+   implement it myself. 
+
+Q: File foo.c impliments glaring-design-bug-bar. Why is this?
+A: It does? Oh. I didn't know that. Either re-impliment it properly, or tell
+   me about it so I can re-impliment it myself.
+
+Q: GNOME Breakout's behavior is non-GNOME-compliant. What are you going to do
+   about this?
+A: Again, either re-impliment it, or tell me about it. I've tried to make this
+   as GNOME-compliant as possible, but it is my first GNOME project.
+
+Q: You just made these questions up, didn't you?
+A: Yes.
+
+A: 42.
+Q: I'll get back to you on that..

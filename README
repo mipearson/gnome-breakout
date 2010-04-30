@@ -1,3 +1,12 @@
+gnome-breakout is an Arkonoid clone I wrote over a decade ago. It landed me
+my first full time job as a developer.
+
+I've put the code up on github for archival.
+
+Original README follows.
+
+===
+
 This is a development release of a GNOME clone of the classic arcade game,
 Breakout. Some common questions:
 
